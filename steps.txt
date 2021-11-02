@@ -1,0 +1,42 @@
+Instructions to use
+	Note :-
+	Currently, I have kept the admin user token directly in the React as I'm not at all familiar with
+	react and have used the react solely for the assessment purpose
+
+	The caching is done for 5 mins and it clears after it . You can increase it in settings by  updating 'CACHE_TTL' value.
+
+
+	Allowed Requests for both anonymous user and logged in user is same 5/min and 100/day
+
+
+Step 1:-
+	http://127.0.0.1:8000/users/ ---->signup endpoint
+
+	Note:-
+	After You signup, you will see a URL in terminal
+	that you will need to click to Activate the user
+	Otherwise, you won't be able to log in via this user
+
+Step 2:-
+	http://127.0.0.1:8000/users/login/ ---->Login endpoint
+
+	Note: we will have to select Raw Data and pass email and password for the user to log in
+	{
+	"email": "admin@mail.com",
+	"password": "1234"
+	}
+	
+Step 3:-
+    If you want to search the
+	StackOverflow question you can do so by hitting the endpoint as below
+	Ex:
+	http://127.0.0.1:8000/test/?q=How do you check that a number is NaN in JavaScript?
+	Where q represents the question be searched and you can use any given parameters accepted by the /search/advanced api. 
+	Or
+
+	You can use the react for it
+	Step 1:- Go to the frontend folder
+	Step 2:- npm install
+	Step 3:- npm start
+	Step 4:- go to http://localhost:3000/ and enter the parameters
+	Step 5:- Press Submit

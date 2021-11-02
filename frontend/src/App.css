@@ -1,0 +1,9 @@
+.jsonview-code {
+    display: block;
+    padding: 0.5rem;
+    background-color: rgb(40, 44, 52);
+    color: rgb(136, 198, 190);
+    overflow-x: scroll;
+    border-radius: 5px;
+    width: 100%;
+}
